@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абакумов Анатолій. ЛР№9</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="score">
+            <div class="player-score">
+                <h2>User</h2>
+                <p id="user-score">0</p>
+            </div>
+            <p id="round-info">Спроба 1 з 3</p>
+            <div class="player-score">
+                <h2>Computer</h2>
+                <p id="bot-score">0</p>
+            </div>
+        </div>
+        <div class="game-area">
+            <div class="card-display" id="user-card"></div>
+            <button id="generate-button" onclick="generateRandomCards()">Generate</button>
+            <div class="card-display" id="bot-card"></div>
+        </div>
+        <p id="message">Введіть ваше ім'я:</p>
+        <input type="text" id="user-name" placeholder="Ваше ім'я">
+        <button onclick="gameStart()">Почати гру</button>
+        <p id="error-text" class="error"></p>
+        <button id="new-game-button" onclick="gameReset()" class="new-game">Почати нову гру</button>
+    </div>
+</body>
+</html>
